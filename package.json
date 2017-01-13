@@ -1,0 +1,19 @@
+{
+  "name": "my-api-template",
+  "version": "0.0.0",
+  "description": "Personal api bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zacaria/my-api-template.git"
+  },
+  "author": "Zacaria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zacaria/my-api-template/issues"
+  },
+  "homepage": "https://github.com/Zacaria/my-api-template#readme"
+}
