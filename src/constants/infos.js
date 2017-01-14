@@ -3,5 +3,3 @@
  */
 
 export const WELCOME = 'Welcome guys !';
-export const API_ROOT = 'API root';
-export const INFO_ROOT = 'infos root';

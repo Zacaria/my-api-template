@@ -1,8 +1,7 @@
-'use strict';
-
 import express from 'express';
 const app = express.Router();
-import {websiteRoot} from '../services/root';
+import * as rootService from '../services/root';
+import * as exceptions from '../constants/exceptions';
 
 /**
  * @api {get} / Flagz Root
@@ -13,12 +12,15 @@ import {websiteRoot} from '../services/root';
 app.get('/', (req, res) => {
     const {protocol} = req;
     const host = req.get('host');
-    res.json(websiteRoot({protocol, host}));
+    res.json({
+        success: true,
+        infos: rootService.websiteRoot({protocol, host})
+    });
 });
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-    const err  = new Error('Path not Found');
+    const err  = new Error(exceptions.PATH_NOT_FOUND);
     err.status = 404;
     next(err);
 });
