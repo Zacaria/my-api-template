@@ -14,6 +14,8 @@ engines:
     enabled: true
   fixme:
     enabled: true
+  rubocop:
+    enabled: true
 ratings:
   paths:
   - "**.css"
@@ -28,8 +30,3 @@ exclude_paths:
 - dist/
 - test/
 - doc/
-engines:
-  rubocop:
-  	enabled: true
-  eslint:
-   	enabled: true
