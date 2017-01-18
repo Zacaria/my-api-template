@@ -27,11 +27,9 @@ ratings:
 exclude_paths:
 - dist/
 - test/
+- doc/
 engines:
   rubocop:
   	enabled: true
   eslint:
    	enabled: true
-
-exclude_paths:
-- "doc/"
