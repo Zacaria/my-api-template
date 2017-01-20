@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(cookieParser());
 
-app.use('/doc', express.static(path.join(__dirname + '/../doc')));
+app.use('/doc', express.static(path.join(__dirname, '/../doc')));
 app.use('/', router);
 
 export default app;

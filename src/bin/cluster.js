@@ -6,7 +6,7 @@ const stopSignals = [
     'SIGHUP', 'SIGINT', 'SIGQUIT', 'SIGILL', 'SIGTRAP', 'SIGABRT',
     'SIGBUS', 'SIGFPE', 'SIGUSR1', 'SIGSEGV', 'SIGUSR2', 'SIGTERM'
 ];
-const production = process.env.NODE_ENV == 'production';
+const production = process.env.NODE_ENV === 'production';
 
 let stopping = false;
 
